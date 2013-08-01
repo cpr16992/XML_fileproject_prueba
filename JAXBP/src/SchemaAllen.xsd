@@ -1,0 +1,227 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:element name="Response">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:byte" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:byte" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:string" name="parent-structure-id"/>
+<xs:element name="children">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:short" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:short" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:short" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:short" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:string" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:string" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:short" name="id"/>
+<xs:element type="xs:string" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:int" name="id"/>
+<xs:element type="xs:string" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:short" name="parent-structure-id"/>
+<xs:element name="children" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="structure" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:int" name="id"/>
+<xs:element type="xs:string" name="atlas-id"/>
+<xs:element type="xs:byte" name="ontology-id"/>
+<xs:element type="xs:string" name="acronym"/>
+<xs:element type="xs:string" name="name"/>
+<xs:element type="xs:string" name="color-hex-triplet"/>
+<xs:element type="xs:short" name="graph-order"/>
+<xs:element type="xs:string" name="st-level"/>
+<xs:element type="xs:byte" name="hemisphere-id"/>
+<xs:element type="xs:int" name="parent-structure-id"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute type="xs:string" name="success"/>
+<xs:attribute type="xs:byte" name="id"/>
+<xs:attribute type="xs:byte" name="start_row"/>
+<xs:attribute type="xs:byte" name="num_rows"/>
+<xs:attribute type="xs:byte" name="total_rows"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>
