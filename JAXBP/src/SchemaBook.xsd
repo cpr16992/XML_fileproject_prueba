@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SchemaBook"
-	xmlns:tns="http://www.example.org/SchemaBook" elementFormDefault="qualified">
-
-    <complexType name="Libro">
-    	<sequence>
-    		<element name="Nombre" type="string"></element>
-    		<element name="ISBN" type="string"></element>
-    	</sequence>
-    </complexType>
-    
-    <element name="Libros" type="tns:Libro"></element>
-</schema>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.example.org/SchemaBook" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Libros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Nombre"/>
+        <xs:element type="xs:string" name="ISBN"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
