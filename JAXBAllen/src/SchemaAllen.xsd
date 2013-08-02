@@ -1,5 +1,30 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:include schemaLocation=""></xs:include>
+	<xs:include schemaLocation=""></xs:include>
+	<xs:complexType name="structure">
+		<xs:sequence>
+			<xs:element type="xs:short" name="id" />
+			<xs:element type="xs:byte" name="atlas-id" />
+			<xs:element type="xs:byte" name="ontology-id" />
+			<xs:element type="xs:string" name="acronym" />
+			<xs:element type="xs:string" name="name" />
+			<xs:element type="xs:string" name="color-hex-triplet" />
+			<xs:element type="xs:byte" name="graph-order" />
+			<xs:element type="xs:string" name="st-level" />
+			<xs:element type="xs:byte" name="hemisphere-id" />
+			<xs:element type="xs:string" name="parent-structure-id" />
+			<xs:element name="children" maxOccurs="1" minOccurs="1"
+				type="children">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="children">
+		<xs:sequence>
+			<xs:element type="structure" name="child" maxOccurs="unbounded"
+				minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
 	<xs:element name="Response">
 		<xs:complexType>
 			<xs:sequence>
@@ -16,16 +41,8 @@
 							<xs:element type="xs:string" name="st-level" />
 							<xs:element type="xs:byte" name="hemisphere-id" />
 							<xs:element type="xs:string" name="parent-structure-id" />
-							<xs:element name="children" maxOccurs="unbounded"
-								minOccurs="1">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="structure">
-										<xs:complexType>
-										</xs:complexType>
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
+							<xs:element name="children" maxOccurs="1" minOccurs="1"
+								type="children">
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
@@ -38,6 +55,4 @@
 			<xs:attribute type="xs:byte" name="total_rows" />
 		</xs:complexType>
 	</xs:element>
-
-
 </xs:schema>

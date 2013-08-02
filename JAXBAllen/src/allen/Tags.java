@@ -15,7 +15,7 @@ public class Tags {
 			
 			final Response.Structure rootElem = extracted(u);
 			System.out.println(rootElem.getName());
-			System.out.println(rootElem.getChildren().toString());
+			System.out.println(rootElem.getChildren().getChild());
 			
 		} catch (JAXBException e) {
 			e.printStackTrace();
