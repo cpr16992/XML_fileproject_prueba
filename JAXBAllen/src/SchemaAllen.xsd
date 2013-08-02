@@ -16,7 +16,16 @@
 							<xs:element type="xs:string" name="st-level" />
 							<xs:element type="xs:byte" name="hemisphere-id" />
 							<xs:element type="xs:string" name="parent-structure-id" />
-							<xs:element name="children">
+							<xs:element name="children" maxOccurs="unbounded"
+								minOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="structure">
+										<xs:complexType>
+										</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
