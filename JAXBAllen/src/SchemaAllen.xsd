@@ -14,15 +14,15 @@
 			<xs:element type="xs:string" name="st-level" />
 			<xs:element type="xs:byte" name="hemisphere-id" />
 			<xs:element type="xs:string" name="parent-structure-id" />
-			<xs:element name="children" maxOccurs="1" minOccurs="1"
+			<xs:element name="children" maxOccurs="1" minOccurs="0"
 				type="children">
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="children">
 		<xs:sequence>
-			<xs:element type="structure" name="child" maxOccurs="unbounded"
-				minOccurs="1" />
+			<xs:element type="structure" name="children" maxOccurs="unbounded"
+				minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:element name="Response">
@@ -41,7 +41,7 @@
 							<xs:element type="xs:string" name="st-level" />
 							<xs:element type="xs:byte" name="hemisphere-id" />
 							<xs:element type="xs:string" name="parent-structure-id" />
-							<xs:element name="children" maxOccurs="1" minOccurs="1"
+							<xs:element name="children" maxOccurs="1" minOccurs="0"
 								type="children">
 							</xs:element>
 						</xs:sequence>
